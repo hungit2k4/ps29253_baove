@@ -30,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
         list.add(new GhiChu("Woking with assignments",2));
         list.add(new GhiChu("Coding Android 1",3));
         list.add(new GhiChu("Coding Database",4));
+<<<<<<< HEAD
+=======
+        list.add(new GhiChu("ghjshgjs",5));
+>>>>>>> 79553a1 (Initial commit)
         ghiChuAdapter= new GhiChuAdapter(list);
         lvNote.setAdapter(ghiChuAdapter);
         btnNote.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +54,11 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 list.add(new GhiChu(text,list.size()+1));
+<<<<<<< HEAD
                 Toast.makeText(MainActivity.this, "Thêm ghi chú thành công", Toast.LENGTH_SHORT).show();
+=======
+                Toast.makeText(MainActivity.this, "Thêm ghi chú ", Toast.LENGTH_SHORT).show();
+>>>>>>> 79553a1 (Initial commit)
                 ghiChuAdapter.notifyDataSetChanged();
             }
         });
